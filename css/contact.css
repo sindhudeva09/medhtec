@@ -25,6 +25,26 @@ body {
 .top-bar i {
   margin-right: 5px;
 }
+/* General Logo Styling */
+.navbar .logo img {
+  height: 40px;
+  width: 100px;
+  vertical-align: middle;
+  margin-left: 50px;
+}
+
+/* Responsive Styling for Mobile */
+@media (max-width: 768px) {
+  .navbar .logo img {
+    height: 30px; /* Adjust for smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .navbar .logo img {
+    height: 25px; /* Further reduce size for very small screens */
+  }
+}
 
 /* Navigation Bar */
 .navbar {
@@ -39,16 +59,6 @@ body {
   z-index: 1000;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   font-size: 0.9em;
-}
-
-.logo {
-  font-size: 1.8rem; /* Use rem for scalable font size */
-  font-weight: bold;
-  color: #3f88c5;
-}
-
-.logo span {
-  color: red;
 }
 
 .nav-links a {
@@ -202,10 +212,6 @@ h1 {
     display: none;
   }
 
-  .navbar .logo {
-    font-size: 20px;
-  }
-
   .about-banner h1 {
     font-size: 24px;
   }
@@ -247,12 +253,6 @@ h1 {
   padding: 10px 20px;
   background-color: #fff;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-.navbar .logo {
-  font-size: 24px;
-  font-weight: bold;
-  color: #1e88e5;
 }
 
 .navbar .nav-links {
@@ -507,4 +507,13 @@ button:hover {
   .footer-column {
     margin-bottom: 20px;
   }
+}
+.logo {
+  font-size: 1.8rem; /* Use rem for scalable font size */
+  font-weight: bold;
+  color: #3f88c5;
+}
+
+.logo span {
+  color: red;
 }
