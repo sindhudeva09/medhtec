@@ -41,15 +41,39 @@ body {
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   font-size: 0.9em;
 }
-
-.logo {
-  font-size: 1.8rem; /* Use rem for scalable font size */
-  font-weight: bold;
-  color: #3f88c5;
+.navbar .nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
 }
 
-.logo span {
-  color: red;
+.navbar .nav-links li a {
+  text-decoration: none;
+  color: #333;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.navbar .nav-links li a:hover {
+  color: #1e88e5;
+}
+.logo img,
+.logo svg {
+  width: 175px;
+  height: auto;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo1 img,
+.logo1 svg {
+  width: 175px;
+  height: auto;
+  margin-left: -5px;
 }
 
 .nav-links a {

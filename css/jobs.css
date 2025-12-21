@@ -41,14 +41,23 @@ body {
   font-size: 0.9em;
 }
 
-.logo {
-  font-size: 1.8rem; /* Use rem for scalable font size */
-  font-weight: bold;
-  color: #3f88c5;
+.logo img,
+.logo svg {
+  width: 175px;
+  height: auto;
 }
 
-.logo span {
-  color: red;
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo1 img,
+.logo1 svg {
+  width: 175px;
+  height: auto;
+  margin-left: -5px;
 }
 
 .nav-links a {
@@ -237,16 +246,6 @@ h1 {
 .about-section .contact-button:hover {
   background-color: #2c6f9f;
   transform: scale(1.05);
-}
-
-/* Navigation Bar */
-.navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px 20px;
-  background-color: #fff;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .navbar .logo {
